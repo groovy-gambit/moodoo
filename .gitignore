@@ -102,3 +102,55 @@ dist
 
 # TernJS port file
 .tern-port
+
+############## ADDING ELIXIR .gitignore files ##############
+
+# Secrets
+secrets/*
+
+# Design builds
+design/colormind.io_bootstrap_.png
+design/email/**/dist
+# SSL
+/tmp
+
+# copy *.secret.exs via scp
+/config/dev.secret.exs
+/config/prod.secret.exs
+/config/test.secret.exs
+# direnv to introduce env var in folders that have .envrc (and you are in it)
+.envrc
+.elixir_ls
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Ignore package tarball (built via "mix hex.build").
+chefshop-*.tar
+
+# If NPM crashes, it generates a log, let's ignore it too.
+npm-debug.log
+
+# The directory NPM downloads your dependencies sources to.
+node_modules
+
+# Ignore assets that are produced by build tools.
+/priv/static/assets/
+
